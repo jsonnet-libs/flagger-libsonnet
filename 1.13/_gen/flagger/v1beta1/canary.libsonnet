@@ -94,6 +94,8 @@
     },
     '#autoscalerRef':: d.obj(help='HPA selector'),
     autoscalerRef: {
+      '#withApiVersion':: d.fn(help='', args=[d.arg(name='apiVersion', type=d.T.string)]),
+      withApiVersion(apiVersion): { spec+: { autoscalerRef+: { apiVersion: apiVersion } } },
       '#withKind':: d.fn(help='', args=[d.arg(name='kind', type=d.T.string)]),
       withKind(kind): { spec+: { autoscalerRef+: { kind: kind } } },
       '#withName':: d.fn(help='', args=[d.arg(name='name', type=d.T.string)]),
@@ -101,6 +103,8 @@
     },
     '#ingressRef':: d.obj(help='Ingress selector'),
     ingressRef: {
+      '#withApiVersion':: d.fn(help='', args=[d.arg(name='apiVersion', type=d.T.string)]),
+      withApiVersion(apiVersion): { spec+: { ingressRef+: { apiVersion: apiVersion } } },
       '#withKind':: d.fn(help='', args=[d.arg(name='kind', type=d.T.string)]),
       withKind(kind): { spec+: { ingressRef+: { kind: kind } } },
       '#withName':: d.fn(help='', args=[d.arg(name='name', type=d.T.string)]),
@@ -343,6 +347,8 @@
     },
     '#targetRef':: d.obj(help='Target selector'),
     targetRef: {
+      '#withApiVersion':: d.fn(help='', args=[d.arg(name='apiVersion', type=d.T.string)]),
+      withApiVersion(apiVersion): { spec+: { targetRef+: { apiVersion: apiVersion } } },
       '#withKind':: d.fn(help='', args=[d.arg(name='kind', type=d.T.string)]),
       withKind(kind): { spec+: { targetRef+: { kind: kind } } },
       '#withName':: d.fn(help='', args=[d.arg(name='name', type=d.T.string)]),
@@ -350,6 +356,8 @@
     },
     '#upstreamRef':: d.obj(help='Gloo Upstream selector'),
     upstreamRef: {
+      '#withApiVersion':: d.fn(help='', args=[d.arg(name='apiVersion', type=d.T.string)]),
+      withApiVersion(apiVersion): { spec+: { upstreamRef+: { apiVersion: apiVersion } } },
       '#withKind':: d.fn(help='', args=[d.arg(name='kind', type=d.T.string)]),
       withKind(kind): { spec+: { upstreamRef+: { kind: kind } } },
       '#withName':: d.fn(help='', args=[d.arg(name='name', type=d.T.string)]),

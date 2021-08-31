@@ -57,9 +57,11 @@ Canary is the Schema for the Canary API.
     * [`fn withWebhooks(webhooks)`](#fn-specanalysiswithwebhooks)
     * [`fn withWebhooksMixin(webhooks)`](#fn-specanalysiswithwebhooksmixin)
   * [`obj spec.autoscalerRef`](#obj-specautoscalerref)
+    * [`fn withApiVersion(apiVersion)`](#fn-specautoscalerrefwithapiversion)
     * [`fn withKind(kind)`](#fn-specautoscalerrefwithkind)
     * [`fn withName(name)`](#fn-specautoscalerrefwithname)
   * [`obj spec.ingressRef`](#obj-specingressref)
+    * [`fn withApiVersion(apiVersion)`](#fn-specingressrefwithapiversion)
     * [`fn withKind(kind)`](#fn-specingressrefwithkind)
     * [`fn withName(name)`](#fn-specingressrefwithname)
   * [`obj spec.service`](#obj-specservice)
@@ -171,9 +173,11 @@ Canary is the Schema for the Canary API.
         * [`fn withSubjectAltNames(subjectAltNames)`](#fn-specservicetrafficpolicytlswithsubjectaltnames)
         * [`fn withSubjectAltNamesMixin(subjectAltNames)`](#fn-specservicetrafficpolicytlswithsubjectaltnamesmixin)
   * [`obj spec.targetRef`](#obj-spectargetref)
+    * [`fn withApiVersion(apiVersion)`](#fn-spectargetrefwithapiversion)
     * [`fn withKind(kind)`](#fn-spectargetrefwithkind)
     * [`fn withName(name)`](#fn-spectargetrefwithname)
   * [`obj spec.upstreamRef`](#obj-specupstreamref)
+    * [`fn withApiVersion(apiVersion)`](#fn-specupstreamrefwithapiversion)
     * [`fn withKind(kind)`](#fn-specupstreamrefwithkind)
     * [`fn withName(name)`](#fn-specupstreamrefwithname)
     * [`fn withNamespace(namespace)`](#fn-specupstreamrefwithnamespace)
@@ -588,6 +592,14 @@ Webhook list for this canary
 
 HPA selector
 
+### fn spec.autoscalerRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+
+
 ### fn spec.autoscalerRef.withKind
 
 ```ts
@@ -607,6 +619,14 @@ withName(name)
 ## obj spec.ingressRef
 
 Ingress selector
+
+### fn spec.ingressRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+
 
 ### fn spec.ingressRef.withKind
 
@@ -1464,6 +1484,14 @@ withSubjectAltNamesMixin(subjectAltNames)
 
 Target selector
 
+### fn spec.targetRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+
+
 ### fn spec.targetRef.withKind
 
 ```ts
@@ -1483,6 +1511,14 @@ withName(name)
 ## obj spec.upstreamRef
 
 Gloo Upstream selector
+
+### fn spec.upstreamRef.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+
 
 ### fn spec.upstreamRef.withKind
 
