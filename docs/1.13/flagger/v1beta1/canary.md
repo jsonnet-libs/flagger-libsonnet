@@ -22,8 +22,6 @@ permalink: /1.13/flagger/v1beta1/canary/
   * [`fn withGeneration(generation)`](#fn-metadatawithgeneration)
   * [`fn withLabels(labels)`](#fn-metadatawithlabels)
   * [`fn withLabelsMixin(labels)`](#fn-metadatawithlabelsmixin)
-  * [`fn withManagedFields(managedFields)`](#fn-metadatawithmanagedfields)
-  * [`fn withManagedFieldsMixin(managedFields)`](#fn-metadatawithmanagedfieldsmixin)
   * [`fn withName(name)`](#fn-metadatawithname)
   * [`fn withNamespace(namespace)`](#fn-metadatawithnamespace)
   * [`fn withOwnerReferences(ownerReferences)`](#fn-metadatawithownerreferences)
@@ -56,6 +54,36 @@ permalink: /1.13/flagger/v1beta1/canary/
     * [`fn withThreshold(threshold)`](#fn-specanalysiswiththreshold)
     * [`fn withWebhooks(webhooks)`](#fn-specanalysiswithwebhooks)
     * [`fn withWebhooksMixin(webhooks)`](#fn-specanalysiswithwebhooksmixin)
+    * [`obj spec.analysis.alerts`](#obj-specanalysisalerts)
+      * [`fn withName(name)`](#fn-specanalysisalertswithname)
+      * [`fn withSeverity(severity)`](#fn-specanalysisalertswithseverity)
+      * [`obj spec.analysis.alerts.providerRef`](#obj-specanalysisalertsproviderref)
+        * [`fn withName(name)`](#fn-specanalysisalertsproviderrefwithname)
+        * [`fn withNamespace(namespace)`](#fn-specanalysisalertsproviderrefwithnamespace)
+    * [`obj spec.analysis.match`](#obj-specanalysismatch)
+      * [`fn withHeaders(headers)`](#fn-specanalysismatchwithheaders)
+      * [`fn withHeadersMixin(headers)`](#fn-specanalysismatchwithheadersmixin)
+      * [`fn withSourceLabels(sourceLabels)`](#fn-specanalysismatchwithsourcelabels)
+      * [`fn withSourceLabelsMixin(sourceLabels)`](#fn-specanalysismatchwithsourcelabelsmixin)
+    * [`obj spec.analysis.metrics`](#obj-specanalysismetrics)
+      * [`fn withInterval(interval)`](#fn-specanalysismetricswithinterval)
+      * [`fn withName(name)`](#fn-specanalysismetricswithname)
+      * [`fn withQuery(query)`](#fn-specanalysismetricswithquery)
+      * [`fn withThreshold(threshold)`](#fn-specanalysismetricswiththreshold)
+      * [`obj spec.analysis.metrics.templateRef`](#obj-specanalysismetricstemplateref)
+        * [`fn withName(name)`](#fn-specanalysismetricstemplaterefwithname)
+        * [`fn withNamespace(namespace)`](#fn-specanalysismetricstemplaterefwithnamespace)
+      * [`obj spec.analysis.metrics.thresholdRange`](#obj-specanalysismetricsthresholdrange)
+        * [`fn withMax(max)`](#fn-specanalysismetricsthresholdrangewithmax)
+        * [`fn withMin(min)`](#fn-specanalysismetricsthresholdrangewithmin)
+    * [`obj spec.analysis.webhooks`](#obj-specanalysiswebhooks)
+      * [`fn withMetadata(metadata)`](#fn-specanalysiswebhookswithmetadata)
+      * [`fn withMetadataMixin(metadata)`](#fn-specanalysiswebhookswithmetadatamixin)
+      * [`fn withMuteAlert(muteAlert)`](#fn-specanalysiswebhookswithmutealert)
+      * [`fn withName(name)`](#fn-specanalysiswebhookswithname)
+      * [`fn withTimeout(timeout)`](#fn-specanalysiswebhookswithtimeout)
+      * [`fn withType(type)`](#fn-specanalysiswebhookswithtype)
+      * [`fn withUrl(url)`](#fn-specanalysiswebhookswithurl)
   * [`obj spec.autoscalerRef`](#obj-specautoscalerref)
     * [`fn withApiVersion(apiVersion)`](#fn-specautoscalerrefwithapiversion)
     * [`fn withKind(kind)`](#fn-specautoscalerrefwithkind)
@@ -104,6 +132,10 @@ permalink: /1.13/flagger/v1beta1/canary/
       * [`fn withExposeHeaders(exposeHeaders)`](#fn-specservicecorspolicywithexposeheaders)
       * [`fn withExposeHeadersMixin(exposeHeaders)`](#fn-specservicecorspolicywithexposeheadersmixin)
       * [`fn withMaxAge(maxAge)`](#fn-specservicecorspolicywithmaxage)
+      * [`obj spec.service.corsPolicy.allowOrigins`](#obj-specservicecorspolicyalloworigins)
+        * [`fn withExact(exact)`](#fn-specservicecorspolicyalloworiginswithexact)
+        * [`fn withPrefix(prefix)`](#fn-specservicecorspolicyalloworiginswithprefix)
+        * [`fn withRegex(regex)`](#fn-specservicecorspolicyalloworiginswithregex)
     * [`obj spec.service.headers`](#obj-specserviceheaders)
       * [`obj spec.service.headers.request`](#obj-specserviceheadersrequest)
         * [`fn withAdd(add)`](#fn-specserviceheadersrequestwithadd)
@@ -119,6 +151,37 @@ permalink: /1.13/flagger/v1beta1/canary/
         * [`fn withRemoveMixin(remove)`](#fn-specserviceheadersresponsewithremovemixin)
         * [`fn withSet(set)`](#fn-specserviceheadersresponsewithset)
         * [`fn withSetMixin(set)`](#fn-specserviceheadersresponsewithsetmixin)
+    * [`obj spec.service.match`](#obj-specservicematch)
+      * [`fn withGateways(gateways)`](#fn-specservicematchwithgateways)
+      * [`fn withGatewaysMixin(gateways)`](#fn-specservicematchwithgatewaysmixin)
+      * [`fn withHeaders(headers)`](#fn-specservicematchwithheaders)
+      * [`fn withHeadersMixin(headers)`](#fn-specservicematchwithheadersmixin)
+      * [`fn withIgnoreUriCase(ignoreUriCase)`](#fn-specservicematchwithignoreuricase)
+      * [`fn withName(name)`](#fn-specservicematchwithname)
+      * [`fn withPort(port)`](#fn-specservicematchwithport)
+      * [`fn withQueryParams(queryParams)`](#fn-specservicematchwithqueryparams)
+      * [`fn withQueryParamsMixin(queryParams)`](#fn-specservicematchwithqueryparamsmixin)
+      * [`fn withSourceLabels(sourceLabels)`](#fn-specservicematchwithsourcelabels)
+      * [`fn withSourceLabelsMixin(sourceLabels)`](#fn-specservicematchwithsourcelabelsmixin)
+      * [`fn withSourceNamespace(sourceNamespace)`](#fn-specservicematchwithsourcenamespace)
+      * [`fn withWithoutHeaders(withoutHeaders)`](#fn-specservicematchwithwithoutheaders)
+      * [`fn withWithoutHeadersMixin(withoutHeaders)`](#fn-specservicematchwithwithoutheadersmixin)
+      * [`obj spec.service.match.authority`](#obj-specservicematchauthority)
+        * [`fn withExact(exact)`](#fn-specservicematchauthoritywithexact)
+        * [`fn withPrefix(prefix)`](#fn-specservicematchauthoritywithprefix)
+        * [`fn withRegex(regex)`](#fn-specservicematchauthoritywithregex)
+      * [`obj spec.service.match.method`](#obj-specservicematchmethod)
+        * [`fn withExact(exact)`](#fn-specservicematchmethodwithexact)
+        * [`fn withPrefix(prefix)`](#fn-specservicematchmethodwithprefix)
+        * [`fn withRegex(regex)`](#fn-specservicematchmethodwithregex)
+      * [`obj spec.service.match.scheme`](#obj-specservicematchscheme)
+        * [`fn withExact(exact)`](#fn-specservicematchschemewithexact)
+        * [`fn withPrefix(prefix)`](#fn-specservicematchschemewithprefix)
+        * [`fn withRegex(regex)`](#fn-specservicematchschemewithregex)
+      * [`obj spec.service.match.uri`](#obj-specservicematchuri)
+        * [`fn withExact(exact)`](#fn-specservicematchuriwithexact)
+        * [`fn withPrefix(prefix)`](#fn-specservicematchuriwithprefix)
+        * [`fn withRegex(regex)`](#fn-specservicematchuriwithregex)
     * [`obj spec.service.primary`](#obj-specserviceprimary)
       * [`fn withAnnotations(annotations)`](#fn-specserviceprimarywithannotations)
       * [`fn withAnnotationsMixin(annotations)`](#fn-specserviceprimarywithannotationsmixin)
@@ -156,6 +219,13 @@ permalink: /1.13/flagger/v1beta1/canary/
           * [`fn withEnabled(enabled)`](#fn-specservicetrafficpolicyloadbalancerlocalitylbsettingwithenabled)
           * [`fn withFailover(failover)`](#fn-specservicetrafficpolicyloadbalancerlocalitylbsettingwithfailover)
           * [`fn withFailoverMixin(failover)`](#fn-specservicetrafficpolicyloadbalancerlocalitylbsettingwithfailovermixin)
+          * [`obj spec.service.trafficPolicy.loadBalancer.localityLbSetting.distribute`](#obj-specservicetrafficpolicyloadbalancerlocalitylbsettingdistribute)
+            * [`fn withFrom(from)`](#fn-specservicetrafficpolicyloadbalancerlocalitylbsettingdistributewithfrom)
+            * [`fn withTo(to)`](#fn-specservicetrafficpolicyloadbalancerlocalitylbsettingdistributewithto)
+            * [`fn withToMixin(to)`](#fn-specservicetrafficpolicyloadbalancerlocalitylbsettingdistributewithtomixin)
+          * [`obj spec.service.trafficPolicy.loadBalancer.localityLbSetting.failover`](#obj-specservicetrafficpolicyloadbalancerlocalitylbsettingfailover)
+            * [`fn withFrom(from)`](#fn-specservicetrafficpolicyloadbalancerlocalitylbsettingfailoverwithfrom)
+            * [`fn withTo(to)`](#fn-specservicetrafficpolicyloadbalancerlocalitylbsettingfailoverwithto)
       * [`obj spec.service.trafficPolicy.outlierDetection`](#obj-specservicetrafficpolicyoutlierdetection)
         * [`fn withBaseEjectionTime(baseEjectionTime)`](#fn-specservicetrafficpolicyoutlierdetectionwithbaseejectiontime)
         * [`fn withConsecutive5xxErrors(consecutive5xxErrors)`](#fn-specservicetrafficpolicyoutlierdetectionwithconsecutive5xxerrors)
@@ -295,24 +365,6 @@ withLabelsMixin(labels)
 ```
 
 "Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
-
-**Note:** This function appends passed data to existing values
-
-### fn metadata.withManagedFields
-
-```ts
-withManagedFields(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-### fn metadata.withManagedFieldsMixin
-
-```ts
-withManagedFieldsMixin(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
 
 **Note:** This function appends passed data to existing values
 
@@ -575,6 +627,224 @@ withWebhooksMixin(webhooks)
 "Webhook list for this canary"
 
 **Note:** This function appends passed data to existing values
+
+## obj spec.analysis.alerts
+
+"Alert list for this canary analysis"
+
+### fn spec.analysis.alerts.withName
+
+```ts
+withName(name)
+```
+
+"Name of the this alert"
+
+### fn spec.analysis.alerts.withSeverity
+
+```ts
+withSeverity(severity)
+```
+
+"Severity level can be info, warn, error (default info)"
+
+## obj spec.analysis.alerts.providerRef
+
+"Alert provider reference"
+
+### fn spec.analysis.alerts.providerRef.withName
+
+```ts
+withName(name)
+```
+
+"Name of the alert provider"
+
+### fn spec.analysis.alerts.providerRef.withNamespace
+
+```ts
+withNamespace(namespace)
+```
+
+"Namespace of the alert provider"
+
+## obj spec.analysis.match
+
+"A/B testing match conditions"
+
+### fn spec.analysis.match.withHeaders
+
+```ts
+withHeaders(headers)
+```
+
+
+
+### fn spec.analysis.match.withHeadersMixin
+
+```ts
+withHeadersMixin(headers)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.analysis.match.withSourceLabels
+
+```ts
+withSourceLabels(sourceLabels)
+```
+
+"Applicable only when the 'mesh' gateway is included in the service.gateways list"
+
+### fn spec.analysis.match.withSourceLabelsMixin
+
+```ts
+withSourceLabelsMixin(sourceLabels)
+```
+
+"Applicable only when the 'mesh' gateway is included in the service.gateways list"
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.analysis.metrics
+
+"Metric check list for this canary"
+
+### fn spec.analysis.metrics.withInterval
+
+```ts
+withInterval(interval)
+```
+
+"Interval of the query"
+
+### fn spec.analysis.metrics.withName
+
+```ts
+withName(name)
+```
+
+"Name of the metric"
+
+### fn spec.analysis.metrics.withQuery
+
+```ts
+withQuery(query)
+```
+
+"Prometheus query"
+
+### fn spec.analysis.metrics.withThreshold
+
+```ts
+withThreshold(threshold)
+```
+
+"Max value accepted for this metric"
+
+## obj spec.analysis.metrics.templateRef
+
+"Metric template reference"
+
+### fn spec.analysis.metrics.templateRef.withName
+
+```ts
+withName(name)
+```
+
+"Name of this metric template"
+
+### fn spec.analysis.metrics.templateRef.withNamespace
+
+```ts
+withNamespace(namespace)
+```
+
+"Namespace of this metric template"
+
+## obj spec.analysis.metrics.thresholdRange
+
+"Range accepted for this metric"
+
+### fn spec.analysis.metrics.thresholdRange.withMax
+
+```ts
+withMax(max)
+```
+
+"Max value accepted for this metric"
+
+### fn spec.analysis.metrics.thresholdRange.withMin
+
+```ts
+withMin(min)
+```
+
+"Min value accepted for this metric"
+
+## obj spec.analysis.webhooks
+
+"Webhook list for this canary"
+
+### fn spec.analysis.webhooks.withMetadata
+
+```ts
+withMetadata(metadata)
+```
+
+"Metadata (key-value pairs) for this webhook"
+
+### fn spec.analysis.webhooks.withMetadataMixin
+
+```ts
+withMetadataMixin(metadata)
+```
+
+"Metadata (key-value pairs) for this webhook"
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.analysis.webhooks.withMuteAlert
+
+```ts
+withMuteAlert(muteAlert)
+```
+
+"Mute all alerts for the webhook"
+
+### fn spec.analysis.webhooks.withName
+
+```ts
+withName(name)
+```
+
+"Name of the webhook"
+
+### fn spec.analysis.webhooks.withTimeout
+
+```ts
+withTimeout(timeout)
+```
+
+"Request timeout for this webhook"
+
+### fn spec.analysis.webhooks.withType
+
+```ts
+withType(type)
+```
+
+"Type of the webhook pre, post or during rollout"
+
+### fn spec.analysis.webhooks.withUrl
+
+```ts
+withUrl(url)
+```
+
+"URL address of this webhook"
 
 ## obj spec.autoscalerRef
 
@@ -962,6 +1232,34 @@ withMaxAge(maxAge)
 
 
 
+## obj spec.service.corsPolicy.allowOrigins
+
+"String patterns that match allowed origins"
+
+### fn spec.service.corsPolicy.allowOrigins.withExact
+
+```ts
+withExact(exact)
+```
+
+
+
+### fn spec.service.corsPolicy.allowOrigins.withPrefix
+
+```ts
+withPrefix(prefix)
+```
+
+
+
+### fn spec.service.corsPolicy.allowOrigins.withRegex
+
+```ts
+withRegex(regex)
+```
+
+
+
 ## obj spec.service.headers
 
 "Headers operations"
@@ -1081,6 +1379,244 @@ withSetMixin(set)
 
 
 **Note:** This function appends passed data to existing values
+
+## obj spec.service.match
+
+"URI match conditions"
+
+### fn spec.service.match.withGateways
+
+```ts
+withGateways(gateways)
+```
+
+"Names of gateways where the rule should be applied."
+
+### fn spec.service.match.withGatewaysMixin
+
+```ts
+withGatewaysMixin(gateways)
+```
+
+"Names of gateways where the rule should be applied."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.service.match.withHeaders
+
+```ts
+withHeaders(headers)
+```
+
+
+
+### fn spec.service.match.withHeadersMixin
+
+```ts
+withHeadersMixin(headers)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.service.match.withIgnoreUriCase
+
+```ts
+withIgnoreUriCase(ignoreUriCase)
+```
+
+"Flag to specify whether the URI matching should be case-insensitive."
+
+### fn spec.service.match.withName
+
+```ts
+withName(name)
+```
+
+"The name assigned to a match."
+
+### fn spec.service.match.withPort
+
+```ts
+withPort(port)
+```
+
+"Specifies the ports on the host that is being addressed."
+
+### fn spec.service.match.withQueryParams
+
+```ts
+withQueryParams(queryParams)
+```
+
+"Query parameters for matching."
+
+### fn spec.service.match.withQueryParamsMixin
+
+```ts
+withQueryParamsMixin(queryParams)
+```
+
+"Query parameters for matching."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.service.match.withSourceLabels
+
+```ts
+withSourceLabels(sourceLabels)
+```
+
+
+
+### fn spec.service.match.withSourceLabelsMixin
+
+```ts
+withSourceLabelsMixin(sourceLabels)
+```
+
+
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.service.match.withSourceNamespace
+
+```ts
+withSourceNamespace(sourceNamespace)
+```
+
+"Source namespace constraining the applicability of a rule to workloads in that namespace."
+
+### fn spec.service.match.withWithoutHeaders
+
+```ts
+withWithoutHeaders(withoutHeaders)
+```
+
+"withoutHeader has the same syntax with the header, but has opposite meaning."
+
+### fn spec.service.match.withWithoutHeadersMixin
+
+```ts
+withWithoutHeadersMixin(withoutHeaders)
+```
+
+"withoutHeader has the same syntax with the header, but has opposite meaning."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.service.match.authority
+
+
+
+### fn spec.service.match.authority.withExact
+
+```ts
+withExact(exact)
+```
+
+
+
+### fn spec.service.match.authority.withPrefix
+
+```ts
+withPrefix(prefix)
+```
+
+
+
+### fn spec.service.match.authority.withRegex
+
+```ts
+withRegex(regex)
+```
+
+"RE2 style regex-based match (https://github.com/google/re2/wiki/Syntax)."
+
+## obj spec.service.match.method
+
+
+
+### fn spec.service.match.method.withExact
+
+```ts
+withExact(exact)
+```
+
+
+
+### fn spec.service.match.method.withPrefix
+
+```ts
+withPrefix(prefix)
+```
+
+
+
+### fn spec.service.match.method.withRegex
+
+```ts
+withRegex(regex)
+```
+
+"RE2 style regex-based match (https://github.com/google/re2/wiki/Syntax)."
+
+## obj spec.service.match.scheme
+
+
+
+### fn spec.service.match.scheme.withExact
+
+```ts
+withExact(exact)
+```
+
+
+
+### fn spec.service.match.scheme.withPrefix
+
+```ts
+withPrefix(prefix)
+```
+
+
+
+### fn spec.service.match.scheme.withRegex
+
+```ts
+withRegex(regex)
+```
+
+"RE2 style regex-based match (https://github.com/google/re2/wiki/Syntax)."
+
+## obj spec.service.match.uri
+
+
+
+### fn spec.service.match.uri.withExact
+
+```ts
+withExact(exact)
+```
+
+
+
+### fn spec.service.match.uri.withPrefix
+
+```ts
+withPrefix(prefix)
+```
+
+
+
+### fn spec.service.match.uri.withRegex
+
+```ts
+withRegex(regex)
+```
+
+"RE2 style regex-based match (https://github.com/google/re2/wiki/Syntax)."
 
 ## obj spec.service.primary
 
@@ -1345,6 +1881,56 @@ withFailoverMixin(failover)
 "Optional: only failover or distribute can be set."
 
 **Note:** This function appends passed data to existing values
+
+## obj spec.service.trafficPolicy.loadBalancer.localityLbSetting.distribute
+
+"Optional: only one of distribute or failover can be set."
+
+### fn spec.service.trafficPolicy.loadBalancer.localityLbSetting.distribute.withFrom
+
+```ts
+withFrom(from)
+```
+
+"Originating locality, '/' separated, e.g."
+
+### fn spec.service.trafficPolicy.loadBalancer.localityLbSetting.distribute.withTo
+
+```ts
+withTo(to)
+```
+
+"Map of upstream localities to traffic distribution weights."
+
+### fn spec.service.trafficPolicy.loadBalancer.localityLbSetting.distribute.withToMixin
+
+```ts
+withToMixin(to)
+```
+
+"Map of upstream localities to traffic distribution weights."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.service.trafficPolicy.loadBalancer.localityLbSetting.failover
+
+"Optional: only failover or distribute can be set."
+
+### fn spec.service.trafficPolicy.loadBalancer.localityLbSetting.failover.withFrom
+
+```ts
+withFrom(from)
+```
+
+"Originating region."
+
+### fn spec.service.trafficPolicy.loadBalancer.localityLbSetting.failover.withTo
+
+```ts
+withTo(to)
+```
+
+
 
 ## obj spec.service.trafficPolicy.outlierDetection
 
