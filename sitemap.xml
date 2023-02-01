@@ -2,97 +2,187 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://jsonnet-libs.github.io/flagger-libsonnet/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2023-02-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.13/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2023-02-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.13/flagger/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2023-02-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.13/flagger/v1beta1/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2023-02-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.13/flagger/v1beta1/alertProvider/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2023-02-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.13/flagger/v1beta1/canary/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2023-02-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.13/flagger/v1beta1/metricTemplate/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2023-02-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.16/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2023-02-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.16/flagger/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2023-02-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.16/flagger/v1beta1/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2023-02-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.16/flagger/v1beta1/alertProvider/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2023-02-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.16/flagger/v1beta1/canary/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2023-02-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.16/flagger/v1beta1/metricTemplate/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2023-02-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.21/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2023-02-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.21/flagger/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2023-02-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.21/flagger/v1beta1/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2023-02-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.21/flagger/v1beta1/alertProvider/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2023-02-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.21/flagger/v1beta1/canary/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2023-02-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.21/flagger/v1beta1/metricTemplate/</loc>
-         <lastmod>2022-06-14</lastmod>
+         <lastmod>2023-02-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.25/</loc>
+         <lastmod>2023-02-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.25/flagger/</loc>
+         <lastmod>2023-02-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.25/flagger/v1beta1/</loc>
+         <lastmod>2023-02-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.25/flagger/v1beta1/alertProvider/</loc>
+         <lastmod>2023-02-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.25/flagger/v1beta1/canary/</loc>
+         <lastmod>2023-02-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.25/flagger/v1beta1/metricTemplate/</loc>
+         <lastmod>2023-02-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.26/</loc>
+         <lastmod>2023-02-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.26/flagger/</loc>
+         <lastmod>2023-02-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.26/flagger/v1beta1/</loc>
+         <lastmod>2023-02-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.26/flagger/v1beta1/alertProvider/</loc>
+         <lastmod>2023-02-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.26/flagger/v1beta1/canary/</loc>
+         <lastmod>2023-02-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.26/flagger/v1beta1/metricTemplate/</loc>
+         <lastmod>2023-02-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.27/</loc>
+         <lastmod>2023-02-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.27/flagger/</loc>
+         <lastmod>2023-02-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.27/flagger/v1beta1/</loc>
+         <lastmod>2023-02-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.27/flagger/v1beta1/alertProvider/</loc>
+         <lastmod>2023-02-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.27/flagger/v1beta1/canary/</loc>
+         <lastmod>2023-02-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/flagger-libsonnet/1.27/flagger/v1beta1/metricTemplate/</loc>
+         <lastmod>2023-02-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
